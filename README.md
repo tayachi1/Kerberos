@@ -73,7 +73,7 @@ apt install krb5-workstation pam_krb5 -y
 
 - Obtain a ticket from the KDC by running the command 
 ```bash
-kinit ghassen
+kinit 
 ```
 
 - Finally, connect to the PostgreSQL server by running the command 
