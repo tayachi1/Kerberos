@@ -26,7 +26,7 @@ on each instance.
 
 - Check the IP addresses of all instances and improve readability by editing the /etc/hosts file (you can use the ifconfig command on the command line to check your IP address on the network).
 
-- Configure the KDC server by installing the krb5 server and client with the command yum install krb5-server krb5-workstation pan_krb5.
+- Configure the KDC server by installing the krb5 server and client with the command apt install krb5-server krb5-workstation pan_krb5.
 
 - Edit the file /var/kerberos/krd5kdc/kdc.conf and ensure that it resembles the sample configuration provided in the demo.
 
@@ -66,7 +66,7 @@ sudo scp postgres.keytab rt@192.168.56.101:/home/rt/keytab
 
 - Install the Kerberos client on the client server by running the command 
 ```bash 
-yum install krb5-workstation pam_krb5 -y
+apt install krb5-workstation pam_krb5 -y
 ```
 
 - Make sure that the krb5.conf file on the client server matches the configuration provided in the KDC server.
